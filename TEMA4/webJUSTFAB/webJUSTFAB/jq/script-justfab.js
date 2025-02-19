@@ -44,15 +44,15 @@ $(function(){
         $("#menu > li > ul").slideUp();
         console.log("ole1");
         
-        $(this).siblings("ul").slideToggle();
+        $("#menu > li > a span i").removeClass("fa-angle-up").addClass("fa-angle-down");
         console.log("ole3");
-/*Lo mejor seria cambiar la clase donde hayas echo click cambia a fa-angle-up"*/
-        $(this).find("span i").toggleClass("fa-angle-down fa-angle-up");
-        console.log("ole2");
-        
+        /*Lo mejor seria cambiar la clase donde hayas echo click cambia a fa-angle-up"*/
+        if (!$(this).siblings("ul").is(":visible")) {
+            $(this).siblings("ul").slideDown();
+            $(this).find("span i").removeClass("fa-angle-down").addClass("fa-angle-up");
+        }
     });
 });
-
 
 
 /*Cuando haces un poco de scroll sobre la página debe aparecer con el efecto que consideres más apropiado, la cabecera de la página fijada en la parte superior.*/
@@ -67,3 +67,24 @@ $(function(){
     });   
 });
 
+/*Al posicionar el ratón sobre la imagen de un producto debe aparecer otra imagen del mismo producto. Cuando el ratón deja de estar sobe la imagen aparece la imagen inicial. */
+
+$(function(){
+    $(".product-image").on("mouseenter", function(){
+        $(this).attr("src", "img/zapato1-1.jpg");
+    }).on("mouseleave", function(){
+        $(this).attr("src", "img/zapato1.jpg");
+    });
+});
+$(function(){
+    // Cambiar la imagen al pasar el ratón sobre ella en todos los artículos del main
+    $("main article .product-image").on("mouseenter", function(){
+        const originalSrc = $(this).attr("src");
+        const newSrc = originalSrc.replace(".jpg", "-1.jpg");
+        $(this).attr("src", newSrc);
+    }).on("mouseleave", function(){
+        const newSrc = $(this).attr("src");
+        const originalSrc = newSrc.replace("-1.jpg", ".jpg");
+        $(this).attr("src", originalSrc);
+    });
+});
