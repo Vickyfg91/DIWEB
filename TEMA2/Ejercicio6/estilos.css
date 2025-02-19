@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+   
+    padding: 20px;
+    justify-content: center;
+}
+
+#contenido {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    
+    margin-bottom: 20px;
+}
+
+#ofertas {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item-oferta img {
+    max-width: 100%;
+    
+}

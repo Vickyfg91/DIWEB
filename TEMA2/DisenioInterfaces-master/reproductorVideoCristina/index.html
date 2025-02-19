@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reproductor</title>
+    <!--->
+  </head>
+  <body>
+    <h1>Reproductor de video</h1>
+    <video id="video" width="500" height="500">
+        <!--PREGUNTAR POR QUÉ NO SALE EL VIDEO-->
+      <source src="videos/trailer.mp4" type="trailer/mp4" />
+      <source src="videos/trailer.ogv" type="trailer/ogv" />
+      <source src="videos/trailer.swf" type="trailer/mpeg" />
+      <source src="videos/trailer.webm" type="trailer/webm" />
+      Tu navegador no soporta el vídeo
+    </video>
+    <br/>
+    <button onclick="playPause()">Reproducir/Pausar</button>
+    <button onclick="recarga()">Recargar</button>
+    <button onclick="maximizar()">Maximizar</button>
+    <button onclick="minimizar()">Minimizar</button>
+    <button onclick="normal()">Normal</button>
+    <script>
+      var video = document.getElementById("video");
+      function playPause() {
+        if (video.paused) video.play();
+        else video.pause();
+      }
+      function recarga() {
+        video.load();
+      }
+      function maximizar() {
+        video.width = 1000;
+      }
+      function minimizar() {
+        video.width = 250;
+      }
+      function normal() {
+        video.width = 500;
+      }
+    </script>
+    <script src="accion.js"></script>
+  </body>
+</html>

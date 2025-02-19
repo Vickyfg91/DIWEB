@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/estilosFormularioUsuario.css" />
+    <title>Kunska</title>
+    <link rel="shortcut icon" href="../img/Logo empresa.png" type="image/x-icon" />
+    <script src="../jq/jquery-3.6.4.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+    <script src="../jq/validacionLogin.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>Iniciar sesión</h1>
+    <h3>Bienvenid@ a Kunska</h3>
+    <h4>¿Necesitas una cuenta?</h4>
+    <h4><a href="formularioNuevoUsuario">Crear mi cuenta</a></h4>
+    <form id="formulario" action="perfil.html" method="get" name="formulario">
+      <label for="usuario">
+        Correo electrónico/Nombre de usuario:</label><input
+          type="text"
+          name="usuario"
+          id="usuario"
+          required
+          minlength="8"
+      />
+      <label for="clave"
+        >Contraseña:</label><input type="password" name="clave" id="clave" required minlength="6"
+      />
+      <h4>¿Has olvidado la contraseña?|<a href="#" id="help">Ayuda</a></h4>
+      <button type="submit">Entrar</button>
+    </form>
+  </body>
+</html>

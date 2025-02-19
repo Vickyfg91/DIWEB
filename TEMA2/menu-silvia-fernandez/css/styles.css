@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+}
+  
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+
+ul, li, h2, span, a {
+    
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+div#menu {
+    display: flex;
+    flex-flow: column;
+    padding: 1.25rem;
+    text-align: left;
+}
+
+/*Boton cerrar */
+.cerrar img {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    float: right;
+}
+
+/*titulo menu*/
+div#menu h2 {
+
+    font-size: 1.30rem;
+    font-weight: bold;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+/*menu principal*/
+nav#main-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1.25rem;
+    
+    
+}
+
+nav#main-menu ul > li {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0;
+   
+}
+
+nav#main-menu ul > li:nth-child(1) {
+    margin-top:1.3rem;
+    
+}
+
+nav#main-menu ul > li:nth-child(1) > ul {
+
+    margin-bottom: 0;
+}
+
+nav#main-menu ul > li > img.desplegar {
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    height: 1rem;   
+    cursor: pointer;
+
+}
+
+nav#main-menu ul ul {
+    display: none;
+    margin-left: 1.25rem;
+
+}
+
+nav#main-menu ul ul li:nth-child(1) {
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+nav#main-menu ul ul li:nth-child(2) {
+    margin-bottom: 0;
+
+}
+
+/*submenu*/
+nav#main-menu ul > li:hover ul {
+    display: flex;
+    flex-flow: column;
+}
+
+a {
+    color: #000;
+    font-size: 1rem;
+}
+
+/*RRSS*/
+nav#social-menu ul {
+    display: flex;
+    margin-top: 1.25rem;
+    padding: 0;
+}
+
+nav#social-menu ul li img {
+    height: 1.75rem;
+    margin-right: 2rem;
+}
+
+
+nav#social-menu ul > li span {
+    display: none;
+}
+
+/*idioma*/
+nav#idioma-menu {
+    margin-top: 1.25rem;
+    font-size: 0.85rem;
+}
+
+nav#idioma-menu span {
+    display: flex;
+}
+
+nav#idioma-menu img.desplegar {
+    display: flex;
+    height: 1.25rem;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+nav#idioma-menu ul {
+    display: none;
+    margin-top: 0.62rem;   
+}
+
+nav#idioma-menu ul li {
+    margin: 0.3rem 0;
+    padding: 0.8rem;  
+}
+
+nav#idioma-menu ul li img.bandera {
+    display: flex;
+    height: 1.25rem;
+    margin-right: 0.3rem;
+}
+
+nav#idioma-menu ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+
+nav#idioma-menu:hover ul {
+    display: flex;
+}
+
+

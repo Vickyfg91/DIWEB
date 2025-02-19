@@ -1,0 +1,128 @@
+* {box-sizing: border-box;}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: fff;
+    padding: 1rem;
+    max-width: 29rem;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    padding: 0.2rem 0; 
+}
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+header > picture{
+    order: 3;
+}
+header picture img {
+    width: 6rem;
+    height: auto;
+}
+header > nav#buscador{
+    order: 2;
+}
+header > nav#menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    order:1;
+}
+header > nav input#menu-hamburger {
+    display: none;
+}
+
+nav ul#menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    font-size: 0.75rem;
+}
+
+header > nav#compra{
+    order: 4;
+}
+
+nav ul#menu {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+#menu-hamburger:checked + ul#menu {
+    display: flex;
+}
+
+#buscador ul, #compra ul {
+    list-style: none;
+}
+
+#buscador li, #compra li {
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+main article.item {
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 49%;
+    text-align: center;
+}
+
+main article.item > a:nth-child(1) {
+    font-size: 0.9rem;
+    order: 2;
+}
+
+main article.item p{
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    order: 3;
+    font-size: 0.7rem;
+}
+main article.item > a > picture{order: 1;}
+main article.item img {
+    max-width: 100%;
+    height: auto;
+}
+footer {
+    display: flex;
+    flex-flow: column wrap;
+}
+footer > nav#menu-adicional ul{
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+}
+footer > nav#menu-adicional ul > li{
+    border-bottom: 1px solid lightgrey;
+}
+footer > nav#iconos-sociales ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,77 @@
+body {
+  background-image: url("../../img/image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+form,
+p {
+  margin: 20px;
+}
+a {
+  color: black;
+}
+#help {
+  color: darkblue;
+}
+form{
+  width: 100%;
+  text-align: center;
+}
+
+p.note {
+  font-size: 1rem;
+  color: red;
+}
+
+input {
+  border: 1px solid white;
+  padding: 4px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+label {
+  width: 300px;
+  font-weight: normal;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+label span {
+  font-size: 1rem;
+}
+
+label.error {
+  color: red;
+  font-size: 1rem;
+  display: block;
+  margin-top: 5px;
+}
+
+input.error {
+  border: 1px dashed red;
+  font-weight: 300;
+  color: red;
+}
+
+button {
+  border-radius: 30%;
+  background: #7293e0;
+  color: black;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5% 10% 5% 10%;
+}
+label{
+    width: 100%;
+  }
+  @media all and (min-width: 1060px) {
+    button{
+      background-color: #e28788;
+    }
+  }

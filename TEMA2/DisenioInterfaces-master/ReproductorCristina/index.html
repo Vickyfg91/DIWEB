@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Reproductor</title>
+  </head>
+
+  <body>
+    <audio id="cancion">
+      <source src="canciones/hotel-california.m4a">
+      <!--<source src="canciones/flowers.m4a">-->
+    </audio>
+
+    <!--Primera parte del elemento(imagen, info del artista)-->
+    <div id="player">
+      <img src="" class="cover" id="art" />
+      <div class="trackinfo">
+        <p id="title"></p>
+        <p id="artist"></p>
+      </div>
+      <!--Controlador del audio(tiempo)-->
+      <div id="track">
+        <progress id="progreso" max="100" value="0"></progress>
+      </div>
+      
+      <!--Contenido (controles)-->
+      <div class="container">
+        <div class="info">
+          <div class="cont">
+            <!--Delante-->
+            <button id="prev" class="nav">
+              <img src="prev.svg" />
+            </button>
+            <!--Pause/play-->
+            <button id="play" class="nav">
+              <img class="pad" src="play.svg" />
+            </button>
+            <!--Atrás-->
+            <button id="next" class="nav">
+              <img src="next.svg" />
+            </button>
+            <!--Controlador de volumen-->
+            <div class="control-volumen">
+              <button type="button" name="button">
+                <img src="volumen.svg" alt="volumen" class="volumen">
+              </button>
+              <input type="range" value="100" min="0" max="100" step="1" id="volumen">
+            </div>
+            <div id="stop">
+              <button type="button" id="stopButton"><img src="stop.svg" alt="boton stop" id="stop"></button>
+              <button type="button" id="resetButton"><img src="reset.svg" alt="boton reset" id="reset"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="funcionamiento.js"></script>
+  </body>
+</html>

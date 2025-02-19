@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+/*Para hacer que se vean unos debajos de otros*/
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*Cambiarmos todos los padres*/
+main > nav#menu-desplegable > ul > li > a {
+  color: black;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: lightgray;
+  text-align: center;
+}
+
+/*Para que el cajón cubra toda la parte negra*/
+main > nav#menu-desplegable > ul > li {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+}
+
+/*Cambiamos los hijos*/
+main > nav#menu-desplegable > ul > li > ul > li > a {
+  color: white;
+  border: 1px solid 3e4144;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: #3e4144;
+  text-align: center;
+}
+
+main > nav#menu-desplegable > ul > li > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+main > nav#menu-desplegable > ul > li > ul > li {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+}
+
+/*Para que desaparezcan los menús hijos*/
+main > nav#menu-desplegable > ul > li > ul > li > a {
+  display: none;
+}
+/*Salen cuando se pasa por encima*/
+main > nav#menu-desplegable > ul > li:hover > ul > li > a {
+  display: block;
+}
+/*Para que cambia el color el padre cuando se pasa por encima*/
+main > nav#menu-desplegable > ul > li:hover > a {
+  color: white;
+  background-color: gray;
+  border-color: gray;
+}

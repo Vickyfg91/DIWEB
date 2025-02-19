@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  background: lightblue;
+  background-size: cover;
+  color: #212121;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-label fieldset {
+  position: relative;
+}
+.form-label:first-child input {
+  border-radius: 4px 4px 0 0;
+}
+.form-label:last-child input {
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+.form-label + fieldset {
+  border-top: 1px solid #ddd;
+}
+
+.form-label input:valid + label,
+.form-label input:focus + label {
+  color: darkblue;
+  font-weight: 700;
+  font-size: 12px;
+  transform: translate3d(0, -10px, 0);
+}
+
+.form-label input:valid,
+.form-label input:focus {
+  padding: 22px 8px 10px;
+}
+.form-label input:focus {
+  background: lightcyan;
+}
+input {
+    display: block;
+    width: 100%;
+    height: 3em;
+    padding: 16px 8px;
+    border: 0;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    background:lightblue;
+    color: black;
+    outline: 0;
+    appearance: none;
+    transition: all 0.2s ease-in-out;
+  }
+label {
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    color: darkblue;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease-in-out;
+  }
+
+
+a {
+  color: purple;
+  text-decoration: none;
+
+}
+a:hover {
+  text-decoration: underline;
+}

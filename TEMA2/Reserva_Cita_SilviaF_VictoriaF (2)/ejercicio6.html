@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Cita</title>
+</head>
+<body>
+    <main>
+        <form action="https://educacionadistancia.juntadeandalucia.es/centros/malaga/pluginfile.php/395426/assignsubmission_file/submission_files/193207/ejercicio6.html" method="post">
+            <h2>Reserva de Cita</h2>
+
+            <label for="nombre">Nombre*</label>
+            <input type="text" id="nombre" name="nombre" autofocus required>
+            
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            
+            <label for="telefono">Teléfono</label>
+            <div>
+                <select id="bandera" name="bandera" required>
+                    <option value="" disabled>Selecciona un país</option>
+                    <option value="spain">🇪🇸Spain +34</option>
+                    <option value="france">🇫🇷 +33</option>
+                    <option value="unitedKingdom">🇬🇧 +44</option>
+                </select> 
+                <input type="tel" id="telefono" name="telefono" placeholder="612 34 56 78" required>
+            </div>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" maxlength="30" title="Inserta un email válido">
+            
+            <label for="puntoVenta">Selecciona tu punto de Venta</label>
+            <select id="puntoVenta" name="puntoVenta" required>
+                <option value="">Selecciona un Punto de Venta</option>
+                <option value="tienda1">PDV 1</option>
+                <option value="tienda2">PDV 2</option>
+            </select>
+            
+            <label for="tipoVestido">Tipo de Vestido</label>
+            <select id="tipoVestido" name="tipoVestido" required>
+                <option value="">Selecciona un Tipo de Vestido</option>
+                <option value="vestido1">Tipo Vestido 1</option>
+                <option value="vestido2">Tipo Vestido 2</option>
+            </select>
+            
+            <label for="fecha">Fecha de cita</label>
+            <input type="date" id="fecha" name="fecha" placeholder="dd-mm-aaaa">
+            
+            <input type="submit" value="Reservar">
+        </form>
+    </main>
+</body>
+</html>

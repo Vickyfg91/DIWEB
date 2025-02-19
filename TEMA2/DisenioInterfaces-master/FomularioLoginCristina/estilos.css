@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+main>div#contenido{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+
+}
+main>div#contenido>input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    margin-top: 2em;
+}
+main>div#contenido>p>a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+main>div#contenido>button{
+    color:burlywood;
+    background-color: rgb(54,54,54);
+    border-radius:20em;
+    height: 5em;
+    width: 10em;
+}
+

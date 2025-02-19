@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  background-color: lightgray;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 0;
+}
+nav > ul > li {
+  display: flex;
+  flex-direction: row;
+
+  border-right: 1px solid black;
+  padding: 0.2em;
+}
+
+nav > ul > li#login {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+nav > ul > li > a {
+  border-bottom: 1px solid green;
+  border-radius: 5px;
+  padding: 2px;
+  text-decoration: none;
+}

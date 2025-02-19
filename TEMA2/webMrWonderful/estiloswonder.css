@@ -1,0 +1,208 @@
+* {
+	box-sizing: border-box;
+}
+/*Comenzamos con la versión móvil*/
+/*Hacemos el cuerpo de la web flexible*/
+body {
+	font-size: 16px;
+	color: grey;
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 0;
+	padding: 0;
+}
+/*Hacemos la cabecera flexible*/
+header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1.25rem;
+}
+/*Estilo para todos los enlaces de la web*/
+a {
+	color: grey;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+/*La hamburguesa la colocamos al principio*/
+header>nav#menu-principal {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	order: -1;
+}
+header>nav#menu-principal>label>span {
+	font-weight: bold;
+	font-size: 2rem;
+}
+/*El input de la hamburguesa tiene que estar oculto*/
+#menu-principal>input[type="checkbox"] {
+	display: none;
+}
+/*El menu principal es flexible*/
+#menu-principal>input[type="checkbox"]:checked+ul#menu {
+	display: flex;
+	display: none;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
+}
+/*En segunda posición está el buscador*/
+header>nav#search {
+	font-size: 1.4rem;
+	order: 2;
+}
+/*En tercera posición se encuentra el logo*/
+header>a#logo {
+	font-size: 1.4rem;
+	order: 3;
+}
+/*El logo de la cabecera tiene un tamaño fijo*/
+header>a#logo img {
+	width: 12rem;
+}
+/*En cuarta posición está el icono del usuario de login*/
+header>nav#login {
+	font-size: 1.4rem;
+	order: 4;
+}
+/*Por último, en quinta posición se encuentra la bolsa de la compra*/
+header>nav#bag {
+	padding-right: 0.5rem;
+	font-size: 1.4rem;
+	order: 5;
+}
+/*Hacemos flexible el cuerpo principal*/
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+/*Los artículos tienen que ser flexibles*/
+main>article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem;
+}
+/*En la versión de móvil se muestran en filas de 2*/
+main>article.item {
+	flex-basis: 50%;
+}
+/*El párrafo con la descripción del artículo va en segundo lugar*/
+main>article>p {
+	order: 2;
+	font-size: 1rem;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*La imagen del artículo aparece en primer lugar*/
+/*Las imágenes de los articulos tienen una anchura relativa*/
+main>article>picture>img {
+	order: 1;
+	max-width: 15rem;
+	height: auto;
+	margin: 0 auto;
+}
+/*El precio va en tercera posición*/
+main>article>span {
+	order: 3;
+}
+/*El botón lo colocamos en última posición*/
+main>article.item>input {
+	border: 0;
+	background-color: #92d1c8;
+	border-radius: 0.2rem;
+	padding: 0.5rem;
+}
+/*Hacemos el pie flexible*/
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(238, 237, 235);
+}
+/*El texto del pie va al final*/
+footer>small {
+	margin-bottom: 1rem;
+	font-size: 0.8rem;
+	color: #333333ab;
+	order: 3;
+}
+/*El menú social hay que hacerlo flexible*/
+footer>nav#menu-social-adicional {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	order: 1;
+}
+footer>nav#menu-social-adicional ul {
+	display: flex;
+}
+/*El menú adicional es flexible y va en segunda posición*/
+footer>nav#menu-adicional {
+	order: 2;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: center;
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+footer>nav#menu-social-adicional>ul>li i {
+	font-size: 1.5rem;
+	color: #cda194;
+	padding: 0 0.5rem;
+}
+
+/*VERSIÓN DE ESCRITORIO*/
+@media screen and (min-width: 1024px) {
+	/*En la cabecera va logo e iconos en la misma línea y debajo el menú*/
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	header>a#logo {
+		order: 1;
+	}
+	header>nav#search,
+	header>nav#bag,
+	header>nav#login {
+		order: 2;
+		flex: 1;
+		text-align: center;
+	}
+	header>nav#menu-principal {
+		order: 3;
+		width: 100%;
+	}
+	/* En la versión de escritorio, el menú de hamburguesa debe mostrarse horizontal */
+	#menu-principal>input[type="checkbox"]:checked+ul#menu {
+		display: flex;
+		flex-direction: row;
+		/* Menú en fila */
+		justify-content: space-around;
+		gap: 1rem;
+	}
+	/* Los elementos de los menús son distribuidos de forma horizontal */
+	#menu-principal>ul#menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 2rem;
+	}
+/*La barra social y el menú adicional están uno al lado del otro*/
+	footer>nav#menu-social-adicional {
+		flex-direction: row;
+		justify-content: center;
+	}
+	footer>nav#menu-adicional {
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+}
+/*Hay 4 artículos por fila*/

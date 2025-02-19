@@ -1,0 +1,75 @@
+* {box-sizing: border-box;}
+body{
+    font-family: Arial, sans-serif;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    width: 2.8rem;
+    height: auto;
+    border: #FFC1DA;
+    background-color:  #ffffff;
+    border-width: 0.02rem;
+    margin-left: 0.5rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    cursor: pointer;
+}
+button:hover {
+    background: linear-gradient(#ffe1ed, #ffffff);
+}
+
+main > section {
+    display: flex;
+    flex-direction: row;
+    max-width: 15rem;
+}
+main > section > div#contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border: .1rem solid #FFC1DA;
+    border-radius: 1.5rem;
+    background-color: #ffffff;
+}
+main > section > div#contenedor > div#botonera{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+main > section > div#contenedor > div#botonera > div#progreso{
+    display: flex;
+    color: #FFC1DA;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+main > section > div#contenedor > div#botonera > div#progreso > input#time-range::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #ffffff 0%, #FFC1DA 100%);
+}
+main > section > div#botonera{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0.2rem;
+}
+main > section > div#contenedor > div#volumen{
+    display: flex;
+    flex-direction: row;
+    flex: 0 50%;
+    justify-content: center;
+    padding: 0.2rem;
+
+}
+main > section > div#contenedor > div#volumen > input#volumeRange::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #ffffff 0%, #FFC1DA 100%);
+}
+
+button#pause {
+    display: none;
+}

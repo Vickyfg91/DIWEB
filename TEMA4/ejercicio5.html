@@ -1,0 +1,35 @@
+<script>
+    $(function() {
+        // Mostrar mensaje cuando se selecciona texto en el campo de correo electrónico
+        $('#email').on('select', function() {
+            $('#mensaje-seleccion').removeClass('hidden');
+        });
+
+        // Esconder mensaje cuando el campo pierde el foco
+        $('#email').on('blur', function() {
+            $('#mensaje-seleccion').addClass('hidden');
+        });
+
+        // Cambiar el contenido del div basado en la selección del método de contacto
+        $('#met-contacto').on('change', function() {
+            var metodo = $(this).val();
+            var infoContacto = $('#info-contacto');
+
+            if (metodo === 'telefono') {
+                infoContacto.text('Por favor, introduce tu número de teléfono.');
+            } else if (metodo === 'email') {
+                infoContacto.text('Nos pondremos en contacto a través de tu correo electrónico.');
+            } else if (metodo === 'whatsapp') {
+                infoContacto.text('Nos pondremos en contacto a través de WhatsApp.');
+            } else {
+                infoContacto.text('');
+            }
+
+            if (metodo !== "") {
+                infoContacto.removeClass('hidden');
+            } else {
+                infoContacto.addClass('hidden');
+            }
+        });
+    });
+</script>

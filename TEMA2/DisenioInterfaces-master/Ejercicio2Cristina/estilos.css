@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+/*PARA EL FONDO*/
+body {
+  background-color: #e0e0e0;
+}
+/*CABECERA*/
+header {
+  background-color: #242321;
+}
+header > h1 {
+  display: none;
+}
+header > div.cabecera-sup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header > div.cabecera-inf {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+header > div.cabecera-inf > p {
+  color: white;
+}
+header > div.cabecera-inf > p > img {
+  height: 1.5rem;
+  width: auto;
+}
+div#sofa > article > img {
+  height: 25.5em;
+  width: auto;
+}
+div#sofa > article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+div#sofa > article > div#mens_info{
+  
+}
+
+h6 {
+  color: darkgray;
+  font-size: 11px;
+}
+
+/*CUERPO DEL DOCUMENTO*/
+/*BUSCADOR*/
+main > div#centrar-buscador {
+  display: flex;
+  justify-content: center;
+}
+main > div#centrar-buscador > p#navegador {
+  display: flex;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  padding: 7px;
+}
+
+/*MENÚ*/
+div#centrar-menu {
+  display: flex;
+  justify-content: center;
+}
+nav#buscador {
+  border: 1px solid #242321;
+  background-color: #242321;
+  border-radius: 30px;
+  width: 40%;
+}
+nav#buscador > p {
+  display: flex;
+  justify-content: center;
+  color: #9f886b;
+}
+nav#buscador > p > img {
+  height: 1em;
+  width: auto;
+}
+
+div#cuerpo {
+  background-color: white;
+}
+/*PALABRAS EN DORADO*/
+div#palabras-dorado {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+div#palabras-dorado > p > a {
+  text-decoration: none;
+  color: #9f886b;
+}
+div#palabras-dorado > p {
+  color: #9f886b;
+}
+
+/*LÍNEA ROSA*/
+article#linea-rosa {
+  background-color: #d53a74;
+  text-align: center;
+}
+article#linea-rosa > p {
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #242321;
+}

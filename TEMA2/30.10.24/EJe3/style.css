@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header,article,main,footer,aside{
+    border: 1px solid lightgray;
+    text-align: center;
+    height: 10rem;
+}
+header{
+background-color: lightgreen;
+}
+nav{
+    background-color: orange;
+    order: -1;
+}
+article{
+    background-color: purple;
+}
+aside{
+    background-color: lightgray;
+}
+footer{
+    background-color: lightblue;
+}
+
+div#contenido,
+main{
+    display: flex;
+    flex-flow: column;
+}
+
+/*V. Tablet*/
+@media(min-width:768px){
+    main{
+        flex-flow: row;
+    }
+}
