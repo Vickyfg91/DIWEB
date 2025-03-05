@@ -16,6 +16,7 @@ $(function () {
             var loscontroles='';
             SliderInit();
 
+            // Creamos los controles del slider en tiempo de ejecución
             for(var i=0;i<lengthSlider;i++){
                 if(i==0){
                     loscontroles += '<li class="active"></li>';

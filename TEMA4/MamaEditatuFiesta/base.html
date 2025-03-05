@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>MamaEditatuFiesta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Victoria Fernández González" name="author" />
+    <meta content="Sitio Web de la tienda Mama edita tu Fiesta" name="description" />
+    <meta content="mamaeditatufiesta, fiestas, comuniones, cumpleaños, papeleriacreativa, papeleriapersonalizada" name="keywords" />
+    <meta name="lang" content="es-ES" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="shortcut icon" href="img/logoCirc.svg"/>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+      /* Tipo de letra Quicksand */
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Playball&display=swap");
+
+    </style>
+  </head>
+  <body>
+    <div id="contenedor">
+      <header id="cabecera">
+        <nav id="menu">
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger" class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+            <nav class="main-menu">
+              <ul>
+                <li><a href="#" class="item-menu">Kit Cumpleaños</a></li>
+                <li><a href="#" class="item-menu">Toppers</a></li>
+                <li><a href="#" class="item-menu">Kit Personalizado</a></li>                <a href="#" class="item-menu">Sticker Personalizadas</a>
+                <li><a href="#" class="item-menu">Invitaciones</a></li>
+                <li><a href="#" class="item-menu">Decoración y Menaje</a></li>
+                <li><a href="#" class="item-menu">Super Personalizados</a></li>
+                <li><a href="#" class="item-menu">Sobre mí</a></li>
+              </ul>
+            </nav>
+            <a href="Index.html"><picture><img src="img/logoPrincipal.svg" alt="Logo MamaEditatuFiesta Principal" title="Ir a inicio" width="240" height="300"/></picture></a>
+            <nav id="menu-usuario">
+              <a href="#" aria-label="Ir a Usuario"><img src="img/iconos_svg/IconoUserMEF.svg" alt="Icono Usuario" title="Ir a Usuario"/><span>Usuario</span></a>
+              <a href="#" aria-label="Ir a Carrito"><img src="img/iconos_svg/IconoBolsaCompra.svg" alt="Icono Carrito" title="Ir a Carrito"/><span>Carrito</span></a>
+            </nav>
+          </nav>
+        </header>
+        <main>
+
+        </main>
+        <footer>
+          <nav id="menu-social">
+            <a href="#" aria-label="Icono Whatsapp"><img src="img/iconos_svg/IconWhatsapp.svg" alt="Icono Whatsapp" title="Ir a nuestra cuenta de Whatsapp"/><span>Whatsapp</span></a>
+            <a href="#" aria-label="Icono Instagram"><img src="img/iconos_svg/IconInstagram.svg" alt="Icono Instagram" title="Ir a nuestra cuenta de Instagram"><span>Instagram</span></a>
+            <a href="#" aria-label="Icono Facebook"><img src="img/iconos_svg/IconFacebook.svg" alt="Icono Facebook" title="Ir a nuestra cuenta de Facebook"><span>Instagram</span></a>
+            <a href="#" aria-label="Icono Pinterest"><img src="img/iconos_svg/IconPinterest.svg" alt="Icono Pinterest" title="Ir a nuestra cuenta de Pinterest"><span>Instagram</span></a>
+          </nav>
+          
+          <form action="/proceso-suscripcion" method="POST" class="form-newsletter">
+            <h3>Suscríbete a nuestra newsletter</h3>
+              <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
+              <img src="img/iconos_svg/IconEmail.svg" alt="Icono de email"/>
+              <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required/>
+              <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
+              <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
+          </form>
+          <div>
+            <a href="Index.html"><picture><img src="img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" title="Ir a inicio"  width="200" height="150"/></picture></a>
+            <h4>¿Dudas?...Contacta con nosotras</h4>
+            <span><img src="img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio"/> Envíos a Península y Baleares</span>
+            <span><img src="img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title="Métodos de pago aceptados"/>Métodos de pago 
+              <img src="img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa"/>
+              <img src="img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard"/>
+              <img src="img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal"/>
+            </span>
+            <div id="politicas">
+              <a href="#" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; · &nbsp;
+              <a href="#" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
+              <a href="#" aria-label="Visitar nuestra politica de Privacidad">Política de Privacidad</a> &nbsp; · &nbsp;
+              <a href="#" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
+              <span>&copy; 2025 MAMAEDITATUFIESTA</span>
+            </div>
+
+          </div>
+
+          
+        </footer>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,187 @@
+/*
+header {
+  background-color: #FFCCD5;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+header {
+  background-color: #FFFFFF;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  max-width: 150px;
+}
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+nav ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  padding: 10px;
+}
+.hero {
+  text-align: center;
+  padding: 20px;
+  background-color: #9AE5F6;
+}
+.productos .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+.producto {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+footer {
+  background-color: #FFCFE0;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+.logo img {
+  max-width: 180px;
+}
+#menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #7D5A5A;
+}
+nav ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+nav ul li {
+  padding: 12px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #7D5A5A;
+  font-weight: bold;
+}
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #FFC8DD, #BDE0FE);
+  border-radius: 0 0 20px 20px;
+}
+.productos .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+.producto {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+footer {
+  background-color: #FFCCD5;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 20px 20px 0 0;
+}
+.redes a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #7D5A5A;
+}
+.success-newsletter {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .error-newsletter {
+    color: red;
+    font-weight: bold;
+  }
+  main > div > section > article > picture > img {
+    max-width: 100%;
+    width: 40px;
+  }
+article#articulo1 {
+  background-image: url('img/archWeb/kit_basicos/Kit_cumpleaños_11.webp');
+  background-position: 0 -20rem;
+}
+article#articulo2 {
+  background-image: url('img/archWeb/topper/topper2.webp');
+  background-position: 0 -20rem;
+}
+article#articulo3 {
+  background-image: url('img/archWeb/kit_personalizables/kit_sirena_01.webp');
+  background-position: 0 -20rem;
+}
+article#articulo4 {
+  background-image: url('img/archWeb/kit_pegatinas/kit_pegatinas_1.webp');
+  background-position: 0 -20rem;
+}
+article#articulo5 {
+  background-image: url('img/archWeb/Invitaciones/1.webp');
+  background-position: 0 -20rem;
+}
+article#articulo6 {
+  background-image: url('img/archWeb/menajeMEF/1608048111.webp');
+  background-position: 0 -20rem;
+}
+
+/*
+  <section class="seccion-index">
+        <article id="articulo1" class="item">
+          <picture><img src="img/archWeb/kit_basicos/Kit_cumpleaños_11.webp" alt="" width="181" height="187"/></picture>
+          <a href="KitCumpleaños.html" class="articulo">Kit Cumpleaños</a>
+        </article>
+        <article id="articulo2" class="item">
+          <a href="Toppers.html" class="articulo">
+            <picture><img src="img/archWeb/topper/topper2.webp" alt="" width="181" height="187"/></picture>
+          Toppers</a>
+        </article>
+        <article id="articulo3" class="item">
+          <a href="KitPersonalizado.html" class="articulo"></a>
+        </article>
+        <article id="articulo4" class="item">
+          <picture><img src="img/archWeb/kit_pegatinas/kit_pegatinas_1.webp" alt="" width="181" height="187"/></picture>
+          <a href="Sticker.html" class="articulo">Sticker Personalizadas</a>
+        </article>
+        <article id="articulo5" class="item">
+          <picture><img src="img/archWeb/Invitaciones/1.webp" alt="" width="181" height="187"/></picture>
+          <a href="Invitaciones.html" class="articulo">Invitaciones</a>
+        </article>
+        <article id="articulo6" class="item">
+          <picture><img src="img/archWeb/menajeMEF/1608048111.webp" alt="" width="181" height="187"/></picture>
+          <a href="Menaje.html" class="articulo">Decoración y Menaje</a>
+        </article>
+      </section>
+*/
+
+*/
