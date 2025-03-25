@@ -32,7 +32,7 @@
         <span><img id="abrirMenu" src="img/iconos_svg/Icono menu MEF.svg" alt="Icono Menú Hamburguesa" title="Abrir Menú"/></span>
         <ul id="menu">
           <li><a href="#"><img id="cerrarMenu" src="img/iconos_svg/icono cerrar.svg" alt="Icono Cerrar" title="Cerrar Menú" /></a></li>
-          <li><a href="#" class="item-menu">Kit Cumpleaños</a></li>
+          <li><a href="kitCumpleaños.html" class="item-menu">Kit Cumpleaños</a></li>
           <li><a href="#" class="item-menu">Toppers</a></li>
           <li><a href="#" class="item-menu">Kit Personalizado</a></li>
           <li><a href="#" class="item-menu">Sticker Personalizadas</a></li>
@@ -60,13 +60,21 @@
         </ul>
       </nav>
     </div>
-    <p id="anuncio"><a href="#">Envío gratuito para pedidos mayores a 50€</a></p>
   </header>
-  <main id="main-index">
-    
+  <main id="main-acceso">
+    <section id="acceso"></section>
+    <h1>Accede a tu Cuenta</h1>
+    <form>
+        <label for="emailacceso"></label>
+        <input type="email" name="emailacceso" id="emailacceso" placeholder="Correo Electrónico" required />
+        <input type="password" name="passwordacceso" id="passwordacceso" placeholder="Contraseña" required />
+        <div class="recordatorio"><a href="#" aria-label="Ir a Recordatorio de Contraseña">¿Has olvidado tu contraseña?</a></div>
+        <button type="submit" id="btn-sesion" class="btn-rosa">Iniciar Sesión</button>
+        <div class="registro">¿Aún no te has registrado?<a href="#" aria-label="Ir a Registro">Crea tu cuenta</a></div>
+        
+      
+    </form>
   </main>
-
-    
   <footer>
     <nav id="menu-social">
       <a href="#" aria-label="Icono Whatsapp"><img src="img/iconos_svg/IconWhatsapp.svg" alt="Icono Whatsapp"
@@ -80,37 +88,38 @@
     </nav>
 
     <form action="/proceso-suscripcion" method="POST" class="form-newsletter">
-      <h3>Suscríbete a nuestra newsletter</h3>
-      <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label>
-      <img src="img/iconos_svg/IconEmail.svg" alt="Icono de email" />
+      <h4>Suscríbete a nuestra Newsletter</h4>
+      <label for="newsletter">Recibe descargables gratuitos, novedades y descuentos</label><br/>
+      
       <input type="email" name="newsletter" id="newsletter" placeholder="Escriba su email" required />
       <button type="submit" id="btn-subscrib" class="btn-azul">Únete</button>
       <span class="error-newsletter">¡Ups ha ocurrido algo! Inténtalo de nuevo más tarde</span>
+      <!--<img src="img/iconos_svg/IconEmail.svg" alt="Icono de email"/>-->
     </form>
-    <div>
+    <h5>¿DUDAS?...CONTACTA CON NOSOTRAS AQUI</h5>
+    <div id="info">
       <a href="Index.html">
-        <picture><img src="img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" title="Ir a inicio" width="200"
-            height="150" /></picture>
+        <picture><img src="img/logoCirc.svg" alt="Logo MamaEditatuFiesta Secundario" title="Ir a inicio"/></picture>
       </a>
-      <h4>¿Dudas?...Contacta con nosotras</h4>
-      <span><img src="img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio" /> Envíos
+      
+      <span class="info-footer"><img src="img/iconos_svg/IconoLocalizacion.svg" alt="Icono Localización" title="Lugares de envio" /> Envíos
         a Península y Baleares</span>
-      <span><img src="img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title="Métodos de pago aceptados" />Métodos de
+      <span class="info-footer"><img src="img/iconos_svg/IconTarjeta.svg" alt="Icono Tarjeta" title="Métodos de pago aceptados" />Métodos de
         pago
         <img src="img/iconos_svg/IconoVisa.svg" alt="Icono Visa" title="Métodos de pago aceptados Visa" />
         <img src="img/iconos_svg/IconMC.svg" alt="Icono MasterCard" title="Métodos de pago aceptados MasterCard" />
         <img src="img/iconos_svg/IconoPaypal.svg" alt="Icono Paypal" title="Métodos de pago aceptados Paypal" />
       </span>
-      <div id="politicas">
+    </div>
+    <div id="politicas">
         <a href="#" aria-label="Visitar nuestra politica de Cookies">Política de Cookies</a>&nbsp; · &nbsp;
         <a href="#" aria-label="Visitar nuestro aviso legal">Aviso Legal</a> &nbsp; · &nbsp;
         <a href="#" aria-label="Visitar nuestra politica de Privacidad">Política de Privacidad</a> &nbsp; · &nbsp;
         <a href="#" aria-label="Visitar nuestra politica de Accesibilidad">Accesibilidad</a>
         <small>&copy; 2025 MAMAEDITATUFIESTA</small>
-      </div>
     </div>
   </footer>
-  </div>
+
 
   <!-- SCRIPT -->
   <script src="js/script.js" type="text/javascript"></script>

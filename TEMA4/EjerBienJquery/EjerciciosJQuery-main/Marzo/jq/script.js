@@ -260,3 +260,53 @@ document.addEventListener('DOMContentLoaded', function() {
       contador.textContent = 'Dispone de ' + caracteresRestantes + ' caracteres';
     });
   });
+
+  $(function(){
+    var menuabierto =false;
+    $('#hamburger').on('click',function(){
+        if(!menuabierto){
+            $('ul#menu-toggle').finish().slideDown('slow');
+            $('.line-ham:nth-child(2)').stop(true, true).animate({
+                'width':'65%'
+            },400);
+
+            $(this).stop().animate({
+                'background-color':'#2CD4C6'
+            },500);
+        } else {
+            $('ul#menu-toggle').stop(true, true).slideUp('slow');
+            $('.line-ham:nth-child(2)').stop(true, true).animate({
+                'width':'50%'
+            },400);
+
+            $(this).stop(true, true).animate({
+                'background-color':'#2BDADA'
+            },500);
+        }
+        menuabierto=!menuabierto;
+    })
+});
+
+$(function(){
+    var menuabierto =false;
+    
+    $('#hamburger').on('click',function(){
+        if(!menuabierto){
+            $('ul#menu-toggle').slideDown('slow');
+        
+            $('.line-ham:nth-child(2)').stop().animate({
+                'width':'65%'
+            },400);
+
+            $(this).stop().animate({
+                'background-color':'#2CD4C6'
+            },500);
+        } else {
+            $('ul#menu-toggle').slideUp('slow');
+            
+            $('.line-ham:nth-child(2)').stop().animate({
+                'width':'50%'
+            },400);
+    
+            $(this).stop().animate({
+                '
