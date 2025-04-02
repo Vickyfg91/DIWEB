@@ -65,6 +65,9 @@ h5{
   font-weight: 400;
   align-items: center;
 }
+p.borderAzul{
+  border: 1 px solid var(--azul);
+}
 /* Versión móvil */
 header#top {
   display: flex;
