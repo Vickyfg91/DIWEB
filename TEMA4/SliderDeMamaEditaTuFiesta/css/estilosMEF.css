@@ -68,6 +68,10 @@ h5{
 p.borderAzul{
   border: 1 px solid var(--azul);
 }
+.negrita{
+  font-weight: bold;
+}
+
 /* Versión móvil */
 header#top {
   display: flex;
