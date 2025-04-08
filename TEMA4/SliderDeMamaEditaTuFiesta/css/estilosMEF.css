@@ -65,12 +65,14 @@ h5{
   font-weight: 400;
   align-items: center;
 }
-p.borderAzul{
-  border: 1 px solid var(--azul);
+.recAzul{
+  border: 1px solid var(--azul);
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1.25rem;
+  text-align: justify;
 }
-.negrita{
-  font-weight: bold;
-}
+
 
 /* Versión móvil */
 header#top {
@@ -88,7 +90,7 @@ header#top > div {
 
 /* Estilos del menú */
 header#top > div > nav#menu-principal {
-  flex: 20%;
+  flex: 6%;
 }
 
 header#top > div > nav#menu-principal > ul#menu {
@@ -137,13 +139,18 @@ nav#navCarrito > ul > li > a > span {
 }
 
 header#top > div > a {
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+  align-items: center;
   flex: 60%;
 }
-
 header#top > div > a > picture > img#logoPrincipal {
-  width: 16rem;
+  max-width: 16rem;
+  width: 100%;
   height: auto;
 }
+
 
 header#top > div > nav#navUsuario {
   flex: 10%;
@@ -160,6 +167,39 @@ header#top > p#anuncio {
   margin: 0;
 }
 
+
+/*Espacion entre parrafos y titulo*/
+#main-politicas > article > h2{
+  font-size: 1.05rem;
+  padding-top: 0.5rem;
+}
+/*Mostrar decoracion de ul en politicass*/
+#main-politicas > article > ul{
+  padding-left: 30px; 
+  list-style-type: disc;
+}
+/*sobreMI*/
+article#sobremi > section{ 
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-align: justify;
+  margin: 0 auto;
+}
+article#sobremi > img{ 
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 480px;
+  width: 100%;
+  height: auto;  
+  position: relative;
+  padding: 1.25rem;
+}
+#sobremi > p{
+  padding: 1.25rem;
+  text-align: center;
+}
 
 /* ---- Slider ---- */
 .contenedor-slider {
@@ -360,7 +400,7 @@ article.item a.producto {
   width: 100%;
   color: var(--gris);
   font-family: 'Playball', sans-serif;
-  font-size: 2.3em;
+  font-size: 1.8em;
   font-weight: 500;
   text-align: center;
   line-height: 11rem;
